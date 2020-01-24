@@ -96,6 +96,70 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        self.swap_item()
+        self.move_right()
+        if self.can_move_right == False:
+           return "done with first pass"
+        else:
+            def sortHelper():
+                self.compare_item()
+                if self.compare_item == -1:
+                    self.move_left()
+                    self.swap_item()
+                    self.move_right()
+                    self.swap_item()
+                    self.move_right()
+                elif self.compare_item() == 1:
+                    self.swap_item()
+                    self.move_left()
+                    self.swap_item()
+                    self.move_right()
+                    self.swap_item()
+                    self.move_right() 
+           
+        sortHelper()
+
+        
+        # print(self.compare_item())
+        # self.move_left()
+        # self.swap_item()
+        # self.move_right()
+        # self.swap_item()
+        # self.move_right()
+        # print(self.compare_item())
+        # self.move_left()
+        # self.swap_item()
+        # self.move_right()
+        # self.swap_item()
+        # self.move_right()
+        # print(self.compare_item())
+        # self.swap_item()
+        # self.move_left()
+        # self.swap_item()
+        # self.move_right()
+        # self.swap_item()
+        # self.move_right()
+        # print(self.compare_item()) 
+        # self.swap_item()
+        # self.move_left()
+        # self.swap_item()
+        # self.move_right()
+        # self.swap_item()
+        # self.move_right()
+        # print(self.compare_item()) 
+        # self.swap_item()
+        # self.move_left()
+        # self.swap_item()
+        # self.move_right()
+        # self.swap_item()
+        # self.move_right()
+
+       
+           
+
+        
+
+        
         # Fill this out
         pass
 
